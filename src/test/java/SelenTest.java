@@ -43,7 +43,7 @@ public class SelenTest {
         browser.close();
     }
 
-    //This is the actual test, you can have multiple per fil, usually has a descriptive name
+    //This is the actual test, you can have multiple per file, usually has a descriptive name
     @Test
     public void testMethodOne() {
         //Calling get() on a url will tell the driver to open that page
