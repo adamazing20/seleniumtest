@@ -45,7 +45,7 @@ public class SelenTest {
 
     //This is the actual test, you can have multiple per file, usually has a descriptive name
     @Test
-    public void testMethodOne() {
+    public void testForgotEmailButtonIsClickable() {
         //Calling get() on a url will tell the driver to open that page
         browser.get("https://hangouts.google.com/");
 
@@ -53,12 +53,12 @@ public class SelenTest {
         browser.findElement(By.linkText("Sign in")).click();
 
         // assert or check that the button is clickable on the page (this would be the thing you're checking for in the test)
-        assertTrue(checkForgotEmailBtnIsClickcable());
+        assertTrue(getEmailButtonIsEnabled());
 
     }
 
     //return true if the button is enabled/clickable
-    private boolean checkForgotEmailBtnIsClickcable() {
+    private boolean getEmailButtonIsEnabled() {
         return getEmailBtn().isEnabled();
     }
 
