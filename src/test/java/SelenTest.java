@@ -54,7 +54,6 @@ public class SelenTest {
 
         // assert or check that the button is clickable on the page (this would be the thing you're checking for in the test)
         assertTrue(getEmailButtonIsEnabled());
-
     }
 
     //return true if the button is enabled/clickable
